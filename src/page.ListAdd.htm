@@ -1,0 +1,19 @@
+<header>
+    <h1>
+        <span lang="fr">Ajouter une liste</span>
+        <span lang="en">Add a list</span>
+    </h1>
+</header>
+<section>
+    <div lang="fr">Nom de la liste :</div>
+    <div lang="en">List's name:</div>
+    <wdg:text name="name"></wdg:text>
+</section>
+<footer>
+    <wdg:flex>
+        <content list>
+            <wdg:button fire="page" fire-arg="lists" intl:text="cancel" />
+            <wdg:button fire="ok" intl:text="ok" />
+        </content>
+    </wdg:flex>
+</footer>

@@ -1,0 +1,28 @@
+<header>
+    <h1>
+        <span lang="fr">Choix de la traduction</span>
+        <span lang="en">Select translation</span>
+    </h1>
+</header>
+<section name="empty">
+    <div lang="fr">Linguist vous proposera des mots dans une langue A et vous devrez en donner la traduction en langue B.</div>
+    <div lang="en">Translate from A to B.</div>
+    <hr/>
+    <center>
+        <wdg:button fire="page" fire-arg="translation-add" intl:text="add-translation" />
+    </center>
+</section>
+<div name="list-div">
+    <p lang="fr">Liste des traductions</p>
+    <p lang="en">Translations list</p>
+    <center>
+        <section name="list">
+        </section>
+    </center>
+</div>
+<footer>
+    <w:row>
+        <wdg:button fire="page" fire-arg="main" intl:text="back" />
+        <wdg:button fire="page" fire-arg="translation-add" intl:text="add" />
+    </w:row>
+</footer>

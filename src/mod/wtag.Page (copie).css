@@ -1,0 +1,98 @@
+.wtag-page {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.wtag-page > .body,
+.wtag-page > .foot,
+.wtag-page > .head {
+    position: absolute;
+    left: 0;
+    rigth: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wtag-page > .body {
+    display: block;
+    height: 100%;
+    overflow: auto;
+}
+
+.wtag-page > .body > .spc {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+
+.wtag-page > .foot,
+.wtag-page > .head {
+    display: table;
+    background: rgba(0,0,0,.3);
+    background-image: linear-gradient(
+        to bottom, 
+        rgba(10,10,10,.8) 0%, 
+        rgba(40,40,40,.8) 50%, 
+        rgba(30,30,30,.8) 50%, 
+        rgba(60,60,60,.8) 100%);
+}
+
+.wtag-page > .foot > div,
+.wtag-page > .head > div {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0;
+    margin: 0;
+}
+
+.wtag-page .head {
+    top: 0;
+}
+
+.wtag-page .foot {
+    bottom: 0;
+}
+
+.wtag-page > .tbl {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.wtag-page > .tbl > div {
+    display: table-row;
+}
+
+.wtag-page > .tbl > div > div {
+    display: table-cell;
+    text-align: left;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.wtag-page > .tbl > div > div.body {
+    overflow: auto;
+}
+
+.wtag-page > .tbl > div > div.header {
+    vertical-align: top;
+}
+
+.wtag-page > .tbl > div > div.footer {
+    vertical-align: bottom;
+}
+
+

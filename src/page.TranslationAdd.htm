@@ -1,0 +1,23 @@
+<header>
+    <h1>
+        <span lang="fr">Ajouter une traduction</span>
+        <span lang="en">Add a translation</span>
+    </h1>
+</header>
+<section>
+    <div lang="fr">Langue A :</div>
+    <div lang="en">Language A :</div>
+    <wdg:text name="A"></wdg:text>
+    <hr/>
+    <div lang="fr">Langue B :</div>
+    <div lang="en">Language B :</div>
+    <wdg:text name="B"></wdg:text>
+</section>
+<footer>
+    <wdg:flex>
+        <content list>
+            <wdg:button fire="page" fire-arg="translations" intl:text="cancel" />
+            <wdg:button fire="ok" intl:text="ok" />
+        </content>
+    </wdg:flex>
+</footer>

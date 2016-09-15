@@ -1,0 +1,14 @@
+.page-play span[name=ok] {
+    color: #8f8;
+}
+
+.page-play span[name=ko] {
+    color: #f55;
+}
+
+.page-play span[name=ok],
+.page-play span[name=ko] {
+    text-shadow: 0 0 2px #000;
+}
+
+

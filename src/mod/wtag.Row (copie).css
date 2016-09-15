@@ -1,0 +1,16 @@
+div.wtag-row {
+    display: table;
+    width: 100%;
+}
+
+div.wtag-row > div {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+}
+
+div.wtag-row > div > * {
+    margin: 0;
+}
+

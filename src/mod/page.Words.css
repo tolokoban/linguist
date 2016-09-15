@@ -1,0 +1,33 @@
+div.page-words-item {
+    position: relative;
+    display: table;
+    margin: .5rem 0;
+    padding: .25rem 0;
+    width: 100%;
+    background: rgba(255,255,255,.2);
+}
+
+div.page-words-item.ok {
+    background: rgba(100,255,100,.3);
+}
+
+div.page-words-item.ko {
+    background: rgba(255,100,100,.3);
+}
+
+div.page-words-item > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+div.page-words-item > div:nth-child(2) {
+    font-size: 85%;
+}
+
+div.page-words-item > div:first-child,
+div.page-words-item > div:last-child {
+    width: 4rem;
+}

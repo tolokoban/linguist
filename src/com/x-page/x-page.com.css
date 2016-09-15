@@ -1,0 +1,40 @@
+div.x-page {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-between;
+    height: 100%;
+}
+
+div.x-page > * {
+    margin: 0;
+    flex: 1 1 auto;
+}
+
+div.x-page > div {
+    overflow: auto;
+    padding: 1rem;
+    order: 1;
+}
+
+div.x-page > header, div.x-page > footer {
+    background: rgba(64,32,0,.5);
+    margin: 0;
+}
+
+div.x-page > header {
+    order: 0;
+    max-height: 2rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+    color: orange;
+    font-weight: bold;
+    font-size: 1rem;
+    text-shadow: 1px 1px #000;
+}
+
+div.x-page > footer {
+    order: 2;
+    padding: .1rem;
+    max-height: 3rem;
+}

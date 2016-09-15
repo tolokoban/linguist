@@ -1,0 +1,25 @@
+!<header>
+    <h1>
+        <span lang="fr">Mauvaise réponse</span>
+        <span lang="en">Wrong answer</span>
+    </h1>
+</header>
+
+<section>
+    <div lang="fr">La bonne réponse était :</div>
+    <div lang="en">The correct answer was:</div>
+    <hr/>
+    <div name="lblA"></div>
+    <div style="font-size:120%"><b name="A"></b></div>
+    <hr/>
+    <div name="lblB"></div>
+    <div style="font-size:120%"><b name="B"></b></div>
+    <hr/>
+    <div lang="fr">Veuillez retaper la réponse pour continuer :</div>
+    <div lang="en">Please retype the correct answer to continue:</div>
+    <wdg:text name="repeat"></wdg:text>
+    <hr/>
+    <center>
+        <wdg:button fire="valid" intl:text="ok" />
+    </center>
+</section>

@@ -1,0 +1,30 @@
+<header>
+    <h1>
+        <span lang="fr">Tester vos connaissances</span>
+        <span lang="en">Test your self</span>
+    </h1>
+</header>
+<footer>
+    <wdg:flex>
+        <content list>
+            <div><span name="ok">0</span>&nbsp;&nbsp;<span name="ko">0</span></div>
+            <div style="color:#fff"><b style="font-size:170%" name="percent">100</b>%</div>
+            <wdg:button fire="valid" $text="Valider / OK" />
+        </content>
+    </wdg:flex>
+</footer>
+
+<section>
+    <div lang="fr">Quelle est la traduction du mot suivant ?</div>
+    <div lang="en">What is the translation of the following word?</div>
+    <hr/>
+    <div name="lblA"></div>
+    <p style="font-size:120%"><b name="A"></b></p>
+    <hr/>
+    <div name="lblB"></div>
+    <wdg:text name="B"></wdg:text>
+    <hr/>
+    <center>
+        <wdg:button fire="page" fire-arg="list-menu" intl:text="give-up" />
+    </center>
+</section>

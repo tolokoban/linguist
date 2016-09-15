@@ -1,0 +1,29 @@
+<header>
+    <h1 name="title"></h1>
+</header>
+<section name="empty">
+    <div lang="fr">Vous pouvez créer autant de listes de vocabulaire que vous le souihaitez.</div>
+    <div lang="en">Blablabla.</div>
+    <hr/>
+    <center>
+        <wdg:button fire="page" fire-arg="list-add" intl:text="add-list" />
+    </center>
+</section>
+<div name="list-div">
+    <p lang="fr">Choisissez une liste</p>
+    <p lang="en">Select a list</p>
+    <section name="list">
+    </section>
+</div>
+<hr/>
+<center>
+    <wdg:button fire="page" fire-arg="translation-del" type="warning" intl:text="delete-translation" />
+</center>
+<footer>
+    <wdg:flex>
+        <content list>
+            <wdg:button fire="page" fire-arg="translations" intl:text="back" />
+            <wdg:button fire="page" fire-arg="list-add" intl:text="add" />
+        </content>
+    </wdg:flex>
+</footer>

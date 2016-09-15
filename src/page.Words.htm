@@ -1,0 +1,24 @@
+<header>
+    <h1 name="title"></h1>
+</header>
+<footer>
+    <wdg:flex>
+        <content list>
+            <wdg:button fire="page" fire-arg="list-menu" intl:text="back" />
+            <wdg:button fire="add" intl:text="add" />
+        </content>
+    </wdg:flex>
+</footer>
+
+<section name="empty">
+    <span lang="fr">Utiliser le bouton ci-dessous ou celui en bas à droite pour ajouter du vocabulaire à cette liste.</span>
+    <span lang="en">Use the following button or the one at the bottom-right corner to add vocabulary to this list.</span>
+    <hr/>
+    <center>
+        <wdg:button fire="add" intl:text="add" />
+    </center>
+</section>
+
+<div name="not-empty">
+    <div name="list"></div>
+</div>
