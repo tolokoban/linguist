@@ -1,14 +1,14 @@
 <header>Linguist &nbsp;&nbsp; <small id="VERSION">(-.-.-)</small></header>
-<footer>
+<div>
     <wdg:flex>
         <content list>
-            <wdg:button $value="en" $icon="flag-en" $text="English" />
-            <wdg:button $value="fr" $icon="flag-fr" $text="Français" />
+            <wdg:button $value="en" $icon="flag-en" $text="English" slot:action="onLang" />
+            <wdg:button $value="fr" $icon="flag-fr" $text="Français" slot:action="onLang" />
         </content>
     </wdg:flex>
-</footer>
-<div>
-    <center>
-        <wdg:button intl:text="start" />
-    </center>
 </div>
+<footer>
+    <center>
+        <wdg:button intl:text="start" $href="#Translations" />
+    </center>
+</footer>

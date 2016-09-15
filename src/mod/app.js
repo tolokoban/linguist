@@ -8,9 +8,15 @@
  * var mod = require('linguist/app');
  */
 var $ = require("dom");
-var Cfg = require("$").config;
+var Build = require("$");
 
 
 exports.start = function() {
-    document.getElementById('VERSION').textContent = "(" + Cfg.version + ")";
+    document.getElementById('VERSION').textContent = "(" + Build.config.version + ")";
+};
+
+
+exports.onLang = function(lang) {
+    Build.lang( lang );
+    location.reload();
 };
