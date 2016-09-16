@@ -1,40 +1,54 @@
 div.x-page {
-    display: flex;
-    flex-direction: column;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
     margin: 0;
-    justify-content: space-between;
-    height: 100%;
+    padding: 0;
+    overflow: hidden;
 }
 
 div.x-page > * {
     margin: 0;
-    flex: 1 1 auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
 }
 
 div.x-page > div {
+    top: 2rem;
+    bottom: 3rem;
     overflow: auto;
     padding: 1rem;
-    order: 1;
+    z-index: 0;
 }
 
 div.x-page > header, div.x-page > footer {
-    background: rgba(64,32,0,.5);
-    margin: 0;
+    background: #fec;
+    z-index: 1;
 }
 
 div.x-page > header {
-    order: 0;
-    max-height: 2rem;
     line-height: 2rem;
+    height: 2rem;
+    bottom: auto;
     padding: 0 1rem;
     color: orange;
     font-weight: bold;
     font-size: 1rem;
-    text-shadow: 1px 1px #000;
+    box-shadow: 0 4px 8px rgba(0,0,0,.25);
 }
 
 div.x-page > footer {
-    order: 2;
+    height: 3rem;
+    top: auto;
     padding: .1rem;
-    max-height: 3rem;
+    min-height: 3rem;
+    box-shadow: 0 -4px 8px rgba(0,0,0,.25);
 }

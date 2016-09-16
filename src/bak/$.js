@@ -6,7 +6,7 @@ exports.config={
     major:0,
     minor:5,
     revision:0,
-    date:new Date(2016,8,16,12,54,25)
+    date:new Date(2016,8,15,17,19,42)
 };
 var currentLang = null;
 exports.lang = function(lang) {

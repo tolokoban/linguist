@@ -2,26 +2,22 @@
     <intl:translation-selection/>
 </header>
 
-<section name="empty">
-    <div lang="fr">Linguist vous proposera des mots dans une langue A et vous devrez en donner la traduction en langue B.</div>
-    <div lang="en">Translate from A to B.</div>
+<div>
+    <intl:hint-translations/>
     <hr/>
     <center>
         <wdg:button $href="#TranslationAdd" intl:text="add-translation" $icon="plus" />
     </center>
-</section>
-<div name="list-div">
-    <p lang="fr">Liste des traductions</p>
-    <p lang="en">Translations list</p>
-    <center>
-        <section name="list">
-        </section>
-    </center>
+    <hr/>
+    <intl:translations-list/>
+    <ul id="Translations">
+    </ul>
 </div>
+
 <footer>
     <wdg:flex>
         <content list>
-            <wdg:button intl:text="back" $href="#Main" $icon="back" />
+            <wdg:button intl:text="back" $href="#Main" $icon="back" $type="simple"/>
             <wdg:button $href="#TranslationAdd" intl:text="add" $icon="plus" />
         </content>
     </wdg:flex>
